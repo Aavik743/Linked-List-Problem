@@ -103,7 +103,7 @@ public class LinkedList {
 
 	}
 	
-	public Object toSearch(Object o) {
+	public void toSearch(Object o) {
 
 		MyNode first = head;
 		int count=0;
@@ -114,10 +114,7 @@ public class LinkedList {
 			}
 			count++;
 			first = first.getNext();
-	
-	
 		}
-		return o;
 		
 	}
 }

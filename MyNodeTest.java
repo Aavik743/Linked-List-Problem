@@ -12,7 +12,9 @@ public class MyNodeTest {
 		
 		link.toPrint();
 		
-		link.toSearch(30);
+		link.insertBetween(30, 70, 40);
+		
+		link.toPrint();
 		
 	}
 
