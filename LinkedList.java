@@ -90,5 +90,18 @@ public class LinkedList {
                
 		}
 	
+	public void toPopLast() {
+		MyNode first = head,check=null;
+		while(first.getNext() != null ) {
+			check = first;
+			first = first.getNext();
+
+		}
+		check.setNext(null);
+		
+		System.out.println("\nObject removed from the last place");
+
+	}
+	
 
 }

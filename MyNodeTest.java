@@ -13,7 +13,7 @@ public class MyNodeTest {
 		
 		link.toPrint();
 		
-		link.toPop();
+		link.toPopLast();
 		
 		link.toPrint();
 		
