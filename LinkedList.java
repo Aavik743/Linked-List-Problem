@@ -103,5 +103,23 @@ public class LinkedList {
 
 	}
 	
+	public Object toSearch(Object o) {
 
+		MyNode first = head;
+		int count=0;
+		while(first.getNext() != null ) {
+
+			if(first.getKey() == o) {
+				System.out.println("\nThe position of --> " + o +"," + " is in position "+(count + 1));
+			}
+			count++;
+			first = first.getNext();
+	
+	
+		}
+		return o;
+		
+	}
 }
+	
+	

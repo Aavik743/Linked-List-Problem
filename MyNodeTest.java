@@ -2,7 +2,6 @@ package linky;
 
 public class MyNodeTest {
 
-
 	public static void addNode() {
 
 		LinkedList link = new LinkedList();
@@ -13,9 +12,7 @@ public class MyNodeTest {
 		
 		link.toPrint();
 		
-		link.toPopLast();
-		
-		link.toPrint();
+		link.toSearch(30);
 		
 	}
 
