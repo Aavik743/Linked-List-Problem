@@ -2,20 +2,23 @@ package linky;
 
 public class MyNodeTest {
 
-	public static void linky(){
+
+	public static void addNode() {
 
 		LinkedList link = new LinkedList();
 		
-		link.append(56);
-		link.append(30);
-		link.append(70);
+		link.toAppend(56);
+		link.toAppend(30);
+		link.toAppend(70);
 		
-		link.print();
+		link.toPrint();
+		
 	}
-	
+
 	public static void main(String[] args) {
-		
-		linky();
+
+		addNode();
 
 	}
+
 }

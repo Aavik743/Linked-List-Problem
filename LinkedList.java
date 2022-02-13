@@ -1,7 +1,6 @@
 package linky;
 
 public class LinkedList {
-	
 	MyNode head = null;
 
 	public void  addNode(Object o) {
@@ -20,7 +19,7 @@ public class LinkedList {
 
 	}
 	
-	public void print() {
+	public void toPrint() {
 
 		MyNode first = head;
 		
@@ -36,20 +35,19 @@ public class LinkedList {
 
 	}
 	
-	public void  append(Object o)
-	{
+	public void  toAppend(Object o) {
 		MyNode<Object>	myFirstNode = new MyNode<>(o);
 		if(head==null) {
 			head = myFirstNode;
 		}else {
 
-			MyNode last= lastNode();
+			MyNode last= getLastNode();
 			last.setNext(myFirstNode);
 		}
 
 	}
 	
-	public MyNode lastNode() {
+	public MyNode getLastNode() {
 
 		MyNode first = head; 
 		while(first.getNext() != null ) {
@@ -60,4 +58,5 @@ public class LinkedList {
 		return first;
 
 	}
+
 }
