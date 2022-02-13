@@ -8,11 +8,12 @@ public class MyNodeTest {
 		LinkedList link = new LinkedList();
 		
 		link.toAppend(56);
+		link.toAppend(30);
 		link.toAppend(70);
 		
 		link.toPrint();
 		
-		link.insertBetween(56, 70, 30);
+		link.toPop();
 		
 		link.toPrint();
 		
