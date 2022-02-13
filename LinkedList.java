@@ -35,4 +35,29 @@ public class LinkedList {
 		System.out.print(first.getKey()+" ");
 
 	}
+	
+	public void  append(Object o)
+	{
+		MyNode<Object>	myFirstNode = new MyNode<>(o);
+		if(head==null) {
+			head = myFirstNode;
+		}else {
+
+			MyNode last= lastNode();
+			last.setNext(myFirstNode);
+		}
+
+	}
+	
+	public MyNode lastNode() {
+
+		MyNode first = head; 
+		while(first.getNext() != null ) {
+
+			first = first.getNext();
+
+		}
+		return first;
+
+	}
 }

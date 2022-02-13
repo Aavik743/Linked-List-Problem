@@ -6,9 +6,9 @@ public class MyNodeTest {
 
 		LinkedList link = new LinkedList();
 		
-		link.addNode(70);
-		link.addNode(30);
-		link.addNode(56);
+		link.append(56);
+		link.append(30);
+		link.append(70);
 		
 		link.print();
 	}
