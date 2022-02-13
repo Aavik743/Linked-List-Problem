@@ -16,6 +16,11 @@ public class MyNodeTest {
 		
 		link.toPrint();
 		
+		link.toDelete(40);
+		
+		link.toPrint();
+		link.findSize();
+		
 	}
 
 	public static void main(String[] args) {

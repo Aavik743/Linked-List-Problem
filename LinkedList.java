@@ -117,6 +117,38 @@ public class LinkedList {
 		}
 		
 	}
+	
+	public void toDelete(Object o) {
+
+		MyNode first= head,zero=null;
+
+		if(first.getKey() == o)
+			head = first.getNext();
+
+		while(first.getNext() != null ) {
+			if(first.getKey() == o)
+				break;
+			zero = first;
+			first = first.getNext();
+		}
+		zero.setNext(first.getNext());
+		System.out.println("\nObject deleted");
+	}
+	
+	public void findSize() {
+
+		MyNode first = head; 
+		int count=0;
+		if (head==null)System.out.println(count);
+		while(first.getNext() != null ) {
+			count ++;
+			first = first.getNext();
+
+		}
+		count++;
+		System.out.println("\nThe size is " +(count));
+
+	}
 }
 	
 	
