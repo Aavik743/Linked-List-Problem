@@ -83,5 +83,12 @@ public class LinkedList {
 		System.out.println("entered elements not found : hence filed .");	
 
 	}
+	
+	public void toPop() {
+		head = head.getNext();
+		System.out.println("\nFirst object removed");
+               
+		}
+	
 
 }
